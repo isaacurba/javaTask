@@ -1,18 +1,26 @@
 import java.util.Scanner;
-public class Task{
-    public static void main(String[] args){
-        
-        // initial population
-        double population = 200_000_000;
-        // growth rate
-        double growthRate = 0.005;
-        
+
+public class PopulationProjection {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-    
+
         System.out.print("Enter number of years: ");
         int years = input.nextInt();
 
-        // --------INCOMPLETE-------
+        int currentPopulation = 312032486;
+
+        int secondsInYear = 365 * 24 * 60 * 60;
+
+        int birthsPerYear = secondsInYear / 7;
+        int deathsPerYear = secondsInYear / 13;
+        int immigrantsPerYear = secondsInYear / 45;
+
+        int populationChangePerYear = birthsPerYear + immigrantsPerYear - deathsPerYear;
+
+        int futurePopulation = currentPopulation + (populationChangePerYear * years);
+
+        System.out.println("The population after " + years + " years is " + futurePopulation);
+
+        input.close();
     }
 }
-
