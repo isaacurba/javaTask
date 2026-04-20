@@ -23,7 +23,7 @@ public class Kata{
         
         
         
-     
+    }
     public static int divide(int firstNumber, int secondNumber){
         if (firstNumber > secondNumber){
             return firstNumber / secondNumber;
