@@ -7,11 +7,9 @@ public class PatternTwo{
         
         for(int count = 1; count <= row; count++){
                 
-            for (int space = 1; space <= row - count; space++)
-             System.out.print(" ");
+            for (int space = 1; space <= row - count; space++) System.out.print(" ");
                     
-                for(int counter = 1; counter <= count; counter++)
-                 System.out.print("*");
+                for(int counter = 1; counter <= count; counter++) System.out.print("*");
                 
               System.out.println();
 
