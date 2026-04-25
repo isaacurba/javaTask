@@ -74,7 +74,7 @@ public class Kata{
     
     public static boolean isPrimeNumber(int number){
         if (number % 2 != 0){
-            return true;
+            return true;a
         }else{
             return false;
         }

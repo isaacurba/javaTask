@@ -4,7 +4,7 @@ public class Palindrome{
 
         Scanner input = new Scanner(System.in);
         
-        System.out.print("Enter number to check if it's palindrome: ");
+        System.out.print("Enter number to check if it's palindrome: "   );
         int number = input.nextInt();
         
         int numberCopy = number;
