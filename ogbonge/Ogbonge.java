@@ -15,11 +15,11 @@ public class Ogbonge{
     public static int [] reverseArray(int [] preciousNumbers){
 
         int [] reversedArray = new int [preciousNumbers.length];
-        
-        int indexOfNewArray = 0;        
+
+        int indexOfNewArray = 0;
 
         for(int index = preciousNumbers.length - 1; index >= 0; index--){
-            
+
             reversedArray[indexOfNewArray] = preciousNumbers[index];
             indexOfNewArray++;
         }
@@ -31,8 +31,8 @@ public class Ogbonge{
 
         boolean eDeyThere = false;
         for(int index= 0; index < numbers.length; index++){
-            if (numberToFind == numbers[index]){ 
-                eDeyThere = true;            
+            if (numberToFind == numbers[index]){
+                eDeyThere = true;
                 break;
               }
         }
@@ -49,7 +49,7 @@ public class Ogbonge{
 
         return extractedDigits;
     }
-    
+
     public static int[] oddPosition(int[] number){
 
         int size = (number.length + 1) / 2;
@@ -62,27 +62,27 @@ public class Ogbonge{
 
         return oddPositions;
     }
-    
+
     public static int[] evenPosition(int[] number){
        int[] evenPoition = new int
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }

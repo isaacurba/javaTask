@@ -1,4 +1,5 @@
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class StandardDeviation {
     
@@ -67,6 +68,32 @@ public class StandardDeviation {
         double result = Math.sqrt(sumTheSquares(numbers) / numberLength(numbers));
         
         return df.format(result) ;
+    }
+    
+
+    public static void main(String... args){
+        
+        Scanner input = new Scanner(System.in);
+        
+        
+        System.out.println("How many numbers do you want to check the S.D of: ");
+        int data = input.nextInt();
+        
+        int[] arr = new int[data];
+        
+        
+        for (int index = 0; index < arr.length; index++){
+            System.out.print("Enter " + " number" + (index+1) + " : "); 
+            
+            arr[index] = input.nextInt();
+        }
+        
+        String standardDeviation = squareRootOfVariance(arr);
+        
+        System.out.print("The standard deviation is " + standardDeviation);
+        
+        
+        
     }
     
     

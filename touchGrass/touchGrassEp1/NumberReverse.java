@@ -4,14 +4,14 @@ public class NumberReverse{
         Scanner inputCollector = new Scanner(System.in);
         System.out.print("Enter the number to get it reversed: ");
         int number = inputCollector.nextInt();
-        
+
         int lastDigit = 0;
         int reverseDigit = 0;
-        
-        while(number > 0){
+
+        while(number > 0){s
             lastDigit = number % 10;
             reverseDigit = reverseDigit * 10 + lastDigit;
-            number /= 10; 
+            number /= 10;
         }
         System.out.print(reverseDigit);
     }

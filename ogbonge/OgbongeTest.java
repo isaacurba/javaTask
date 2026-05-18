@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class OgbongeTest{
@@ -10,7 +9,7 @@ public class OgbongeTest{
         int expectedHighest = 200;
         int actualHighest = Ogbonge.getLargestOf(numbers);
         assertEquals(actualHighest, expectedHighest);
-    } 
+    }
 
     @Test
     public void testThatReverseArrayGivesArrayFromTheLastElement(){
@@ -27,7 +26,7 @@ public class OgbongeTest{
         int numberToFind = 8;
         boolean isPresent = Ogbonge.isPresent(numbers, numberToFind);
         assertTrue(isPresent);
-    }  
+    }
 
     @Test
     public void testThatGivenNumberGivesArrayOfDigits(){
@@ -35,8 +34,8 @@ public class OgbongeTest{
         String [] expectedExtractedDigits = {"2","8","0","1"};
         String [] actualExtractedDigits = Ogbonge.extractDigitsOf(number);
         assertArrayEquals(actualExtractedDigits, expectedExtractedDigits);
-    } 
-    
+    }
+
     @Test
     public void testThatGivenArrayOfnumbersAppearsInOddPositions(){
         int[] number = {10, 20, 30, 40, 50, 60};
@@ -44,7 +43,7 @@ public class OgbongeTest{
         int[] actualOddPositions = Ogbonge.oddPosition(number);
         assertArrayEquals(expectedExtractedDigits, actualOddPositions);
     }
-    
+
     @Test
     public void testToCheckElementIsOnEvenPositionsOnAnArray(){
         int[] number = {20, 21, 22, 23, 24, 25};
@@ -52,27 +51,27 @@ public class OgbongeTest{
         int[] actualPosition = Ogbonge.evenPosition(number);
         assertArrayEquals(expectedEvenPosition, actualPosition);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
